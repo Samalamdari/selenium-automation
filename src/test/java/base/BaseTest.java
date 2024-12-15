@@ -5,10 +5,12 @@ import config.DriverFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
+
 
     // WebDriver instance to be shared across test methods
     protected WebDriver driver;
@@ -40,6 +42,4 @@ public class BaseTest {
         // Quit the WebDriver and close the browser window
         DriverFactory.quitDriver();
     }
-
-
 }

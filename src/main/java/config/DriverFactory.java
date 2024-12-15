@@ -1,7 +1,5 @@
 package config;
 
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 import enums.Browser;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -13,14 +11,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
-import static enums.Browser.SAFARI;
-
 public class DriverFactory {
-
 
     // WebDriver instance used across the test execution
     public static WebDriver driver;
-
 
     /**
      * Initializes and returns a WebDriver instance based on the configured browser.
@@ -101,5 +95,4 @@ public class DriverFactory {
             driver.quit();  // Close the browser and clean up resources
         }
     }
-
 }

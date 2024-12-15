@@ -43,10 +43,5 @@ public class BrowserTest extends BaseTest{
 
         Assert.assertEquals(actualUrl, expectedUrl, "Failed");
     }
-
-
-
-
-
 }
 

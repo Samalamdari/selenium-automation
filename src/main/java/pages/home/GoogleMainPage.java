@@ -8,17 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 
 public class GoogleMainPage {
 
-    public static WebDriver driver;
 
-    @FindBy(xpath = "//a[text()= 'About']")
+    public WebDriver driver;
+
+    // WebElements
     public WebElement aboutButton;
-
-    @FindBy(xpath = "//a[text()= 'Store']")
     public WebElement storeButton;
 
     public GoogleMainPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        this.aboutButton = driver.findElement(By.xpath("//a[text()='About']"));
+        this.storeButton = driver.findElement(By.xpath("//a[text()='Store']"));
     }
 
     public void clickOnAboutButton() {
