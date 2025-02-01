@@ -80,9 +80,9 @@ public class MethodPractice {
     }
 }
 
+//========================================================================
 
-
-    //Aseel
+    //Aseel *****
 
 //    public static void main(String[] args) {
 //
@@ -108,9 +108,9 @@ public class MethodPractice {
 //            System.out.print("[ " + character + " ]");
 //        }
 //    }
+//===================================================================
 
-
-    // salma
+    // salma ****
 
 //        public static void main(String[] args) {
 //
@@ -142,5 +142,6 @@ public class MethodPractice {
 //                System.out.println(str.charAt(i));
 //            }
 //        }
+//============================================================
 
 

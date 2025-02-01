@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class WaitUtils {
-
+    // implicit wait
     public static Duration getTimeout() {
         String timeoutValue = ConfigManager.getProperty("timeout");
         int timeoutInSeconds = ( timeoutValue != null ) ? Integer.parseInt(timeoutValue) : 10;
@@ -31,7 +31,7 @@ public class WaitUtils {
             }
         }
     }
-
+         // explicit wait
     public static WebElement applyWait(WebDriver driver, WebElement webElement, WaitStrategy waitStrategy) {
         WebDriverWait wait = new WebDriverWait(driver, getTimeout());
         switch ( waitStrategy ) {

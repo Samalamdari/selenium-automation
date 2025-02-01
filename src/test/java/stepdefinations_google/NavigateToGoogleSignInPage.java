@@ -1,8 +1,6 @@
-package stepdefinations;
+package stepdefinations_google;
 
-import config.ConfigManager;
 import enums.WaitStrategy;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

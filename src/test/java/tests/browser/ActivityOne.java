@@ -25,6 +25,7 @@ public class ActivityOne extends Base {
 
 //    public static void main(String[] args) {
 //
+// ****explicit wait****
 //        WebDriver driver = new ChromeDriver();
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //
@@ -32,6 +33,7 @@ public class ActivityOne extends Base {
 //        WebElement googleAboutButton = driver.findElement(By.xpath("//a[text()='About']"));
 //        exWait.until(ExpectedConditions.elementToBeClickable(googleAboutButton));
 //
+// ***fluent wait****
 //        Wait<WebDriver> wait = new FluentWait<>(driver)
 //                .withTimeout(Duration.ofSeconds(10))
 //                .pollingEvery(Duration.ofSeconds(2))
